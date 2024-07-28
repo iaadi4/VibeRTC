@@ -8,7 +8,7 @@ function Room() {
   const socket = useSocket();
   const [remoteSocketId, setRemoteSocketId] = useState(null);
   const [myStream, setMyStream] = useState(null);
-  const [remoteStream, setRemoteStream] = useState(new MediaStream());
+  const [remoteStream, setRemoteStream] = useState(null);
 
   const handleUserJoin = ({ id }) => {
     setRemoteSocketId(id);
